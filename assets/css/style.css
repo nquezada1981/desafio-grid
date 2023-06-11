@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: 'Monoton', cursive;
+}
+
+.navbar {
+    grid-area: navbar;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.aside {
+    grid-area: aside;
+    background-color: rgb(60, 146, 161);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.section {
+    grid-area: section;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(30%, 1fr));
+    justify-items: center;
+    gap: 10px;
+    padding: 15px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: "navbar navbar navbar navbar "
+        "aside section section section"
+        "footer footer footer footer ";
+    grid-template-rows: 1fr 3fr 0.5fr;
+    grid-template-columns: 1fr 5fr;
+    height: 100vh;
+}
+
+img {
+    width: 35%;
+    padding: 0;
+    margin: 0;
+}
+
+.subtitulo {
+    color: white;
+    font-size: 24px;
+}
+
+.productos {
+    color: white;
+    font-size: 14px;
+
+
+}
+
+.cantidad {
+    color: black;
+}
+
+.img-card {
+    height: 70%;
+}
+
+.card {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    width: 100%;
+    color: white;
+    background-color: rgb(114, 55, 167);
+}
+
+.productos-card {
+    color: black;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+
+}
